@@ -1,7 +1,7 @@
 Platform.setModName('catr', 'CATR (Create Adjust TAC Recipes)')
 StartupEvents.registry('item', event => {
-  event.create('catr:shutter').displayName('Затвор')
-.texture('catr:item/shutter')
+  event.create('catr:shutter_rifle').displayName('Затвор винтовки')
+.texture('catr:item/shutter_rifle')
 });
 StartupEvents.registry('item', event => {
   event.create('catr:the_return_mechanism').displayName('Возвратный механизм').texture('catr:item/the_return_mechanism')
@@ -27,8 +27,8 @@ StartupEvents.registry('item', event => {
 .texture('catr:item/incomplete_the_return_mechanism')
 });
 StartupEvents.registry('item', event => {
-  event.create('catr:incomplete_shutter').displayName('Незавершенный затвор')
-.texture('catr:item/incomplete_shutter')
+  event.create('catr:incomplete_shutter_rifle').displayName('Незавершенный затвор винтовки')
+.texture('catr:item/incomplete_shutter_rifle')
 });
 StartupEvents.registry('item', event => {
   event.create('catr:incomplete_store_weapon').displayName('Незавершенный магазин оружия')
@@ -125,4 +125,12 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('item', event => {
   event.create('catr:incomplete_cz_75').displayName('Незавершенный CZ 75')
 .texture('catr:item/incomplete_cz_75')
+});
+StartupEvents.registry('item', event => {
+  event.create('catr:shutter_pistols').displayName('Затвор пистолета')
+.texture('catr:item/shutter_pistols')
+});
+StartupEvents.registry('item', event => {
+  event.create('catr:incomplete_shutter_pistols').displayName('Незавершенный затвор пистолета')
+.texture('catr:item/incomplete_shutter_pistols')
 });

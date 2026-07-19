@@ -41,23 +41,23 @@ e.recipes.createFilling(
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('catr:shutter', 0.9),
+      CreateItem.of('catr:shutter_rifle', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'createaddition:iron_rod',
     [
     e.recipes.createDeploying(
-      'catr:incomplete_shutter',
+      'catr:incomplete_shutter_rifle',
       ['createaddition:iron_rod', 'catr:iron_drill_bit']),
 e.recipes.createDeploying(
-      'catr:incomplete_shutter',
-      ['catr:incomplete_shutter', 'minecraft:iron_nugget']),
+      'catr:incomplete_shutter_rifle',
+      ['catr:incomplete_shutter_rifle', 'minecraft:iron_nugget']),
 e.recipes.createFilling(
-     'catr:incomplete_shutter',
-     ['catr:incomplete_shutter', Fluid.of('minecraft:lava', 250)])
+     'catr:incomplete_shutter_rifle',
+     ['catr:incomplete_shutter_rifle', Fluid.of('minecraft:lava', 250)])
 ]
   )
-  .transitionalItem('catr:incomplete_shutter')
+  .transitionalItem('catr:incomplete_shutter_rifle')
   .loops(2);
 });
 ServerEvents.recipes(e => {
@@ -145,7 +145,7 @@ ServerEvents.recipes(e => {
       ['catr:incomplete_akm', 'catr:the_return_mechanism']),
     e.recipes.createDeploying(
       'catr:incomplete_akm',
-      ['catr:incomplete_akm', 'catr:shutter'])
+      ['catr:incomplete_akm', 'catr:shutter_rifle'])
 ]
   )
   .transitionalItem('catr:incomplete_akm')
@@ -211,7 +211,7 @@ ServerEvents.recipes(e => {
       ['catr:incomplete_m4a1', 'catr:the_return_mechanism']),
     e.recipes.createDeploying(
       'catr:incomplete_m4a1',
-      ['catr:incomplete_m4a1', 'catr:shutter']),
+      ['catr:incomplete_m4a1', 'catr:shutter_rifle']),
     
 ]
   )
@@ -243,7 +243,7 @@ ServerEvents.recipes(e => {
       ['catr:incomplete_hk_g3', 'catr:the_return_mechanism']),
     e.recipes.createDeploying(
       'catr:incomplete_hk_g3',
-      ['catr:incomplete_hk_g3', 'catr:shutter'])
+      ['catr:incomplete_hk_g3', 'catr:shutter_rifle'])
 ]
   )
   .transitionalItem('catr:incomplete_hk_g3')
@@ -319,16 +319,13 @@ CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:17,GunFi
     [
     e.recipes.createDeploying(
       'catr:incomplete_glock_17',
-      ['catr:corpus_glock_17','catr:barrel_weapon']),
+      ['catr:corpus_glock_17','catr:store_weapon']),
     e.recipes.createDeploying(
       'catr:incomplete_glock_17',
-      ['catr:incomplete_glock_17','catr:store_weapon']),
+      ['catr:incomplete_glock_17','catr:shutter_pistols']),
     e.recipes.createDeploying(
       'catr:incomplete_glock_17',
-      ['catr:incomplete_glock_17','createbigcannons:recoil_spring']),
-    e.recipes.createDeploying(
-      'catr:incomplete_glock_17',
-      ['catr:incomplete_glock_17','catr:shutter'])
+      ['catr:incomplete_glock_17','createbigcannons:recoil_spring'])
 ]
   )
   .transitionalItem('catr:incomplete_glock_17')
@@ -347,18 +344,38 @@ CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:16,GunFi
       ['catr:corpus_cz_75','catr:iron_handle']),
     e.recipes.createDeploying(
       'catr:incomplete_cz_75',
-      ['catr:incomplete_cz_75','catr:barrel_weapon']),
-    e.recipes.createDeploying(
-      'catr:incomplete_cz_75',
       ['catr:incomplete_cz_75','catr:store_weapon']),
     e.recipes.createDeploying(
       'catr:incomplete_cz_75',
-      ['catr:incomplete_cz_75','createbigcannons:recoil_spring']),
+      ['catr:incomplete_cz_75','catr:shutter_pistols']),
     e.recipes.createDeploying(
       'catr:incomplete_cz_75',
-      ['catr:incomplete_cz_75','catr:shutter'])
+      ['catr:incomplete_cz_75','createbigcannons:recoil_spring'])
 ]
   )
   .transitionalItem('catr:incomplete_cz_75')
   .loops(1);
+});
+ServerEvents.recipes(e => {
+  e.recipes.create.sequenced_assembly(
+    [
+      CreateItem.of('catr:shutter_pistols', 0.9),
+      CreateItem.of('create:iron_sheet', 0.1)
+    ],
+    'createaddition:iron_rod',
+    [
+    e.recipes.createDeploying(
+      'catr:incomplete_shutter_pistols',
+      ['createaddition:iron_rod', 'create:iron_sheet']),
+e.recipes.createPressing('catr:incomplete_shutter_pistols', 'catr:incomplete_shutter_pistols'),
+e.recipes.createDeploying(
+      'catr:incomplete_shutter_pistols',
+      ['catr:incomplete_shutter_pistols', 'minecraft:iron_nugget']),
+e.recipes.createDeploying(
+      'catr:incomplete_shutter_pistols',
+      ['catr:incomplete_shutter_pistols', 'catr:iron_drill_bit'])
+    ]
+  )
+  .transitionalItem('catr:incomplete_shutter_pistols')
+  .loops(2);
 });
