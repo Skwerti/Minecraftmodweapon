@@ -1,123 +1,128 @@
+Platform.setModName('catr', 'CATR (Create Adjust TAC Recipes)')
 StartupEvents.registry('item', event => {
-  event.create('shutter').displayName('Затвор')
-})
-StartupEvents.registry('item', event => {
-  event.create('the_return_mechanism').displayName('Возвратный механизм')
-})
-StartupEvents.registry('item', event => {
-  event.create('barrel_weapon').displayName('Ствол оружия')
-})
-StartupEvents.registry('item', event => {
-  event.create('insides_weapon_akm').displayName('Внутренности оружия AKM')
-})
-StartupEvents.registry('item', event => {
-  event.create('store_weapon').displayName('Магазин оружия')
-})
-StartupEvents.registry('item', event => {
-  event.create('incomplete_diamond').displayName('Незавершённый алмаз');
+  event.create('catr:shutter').displayName('Затвор')
+.texture('catr:item/shutter')
 });
 StartupEvents.registry('item', event => {
-  event.create('iron_drill_bit').displayName('Железное сверло');
+  event.create('catr:the_return_mechanism').displayName('Возвратный механизм').texture('catr:item/the_return_mechanism')
 });
 StartupEvents.registry('item', event => {
-  event.create('incomplete_barrel_weapon').displayName('Незавершенный ствол оружия');
+  event.create('catr:barrel_weapon').displayName('Ствол оружия')
+.texture('catr:item/barrel_weapon')
 });
 StartupEvents.registry('item', event => {
-  event.create('incomplete_insides_weapon_akm').displayName('Незавершенные внутренности оружия AKM');
+  event.create('catr:store_weapon').displayName('Магазин оружия')
+.texture('catr:item/store_weapon')
 });
 StartupEvents.registry('item', event => {
-  event.create('incomplete_the_return_mechanism').displayName('Незавершенный возвратный механизм');
+  event.create('catr:iron_drill_bit').displayName('Железное сверло')
+.texture('catr:item/iron_drill_bit')
 });
 StartupEvents.registry('item', event => {
-  event.create('incomplete_shutter').displayName('Незавершенный затвор');
+  event.create('catr:incomplete_barrel_weapon').displayName('Незавершенный ствол оружия')
+.texture('catr:item/incomplete_barrel_weapon')
 });
 StartupEvents.registry('item', event => {
-  event.create('incomplete_store_weapon').displayName('Незавершенный магазин оружия')
-})
+  event.create('catr:incomplete_the_return_mechanism').displayName('Незавершенный возвратный механизм')
+.texture('catr:item/incomplete_the_return_mechanism')
+});
 StartupEvents.registry('item', event => {
-  event.create('butt_weapon').displayName('Деревянный приклад')
-})
+  event.create('catr:incomplete_shutter').displayName('Незавершенный затвор')
+.texture('catr:item/incomplete_shutter')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_butt_weapon').displayName('Незавершенный деревянный приклад')
-})
+  event.create('catr:incomplete_store_weapon').displayName('Незавершенный магазин оружия')
+.texture('catr:item/incomplete_store_weapon')
+});
 StartupEvents.registry('item', event => {
-  event.create('wooden_handle').displayName('Деревянная рукоятка')
-})
+  event.create('catr:butt_weapon').displayName('Деревянный приклад')
+.texture('catr:item/butt_weapon')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_wooden_handle').displayName('Незавершенная деревянная рукоятка')
-})
+  event.create('catr:incomplete_butt_weapon').displayName('Незавершенный деревянный приклад')
+.texture('catr:item/incomplete_butt_weapon')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_akm').displayName('Незавершенный AKM')
-})
+  event.create('catr:wooden_handle').displayName('Деревянная рукоятка')
+.texture('catr:item/wooden_handle')
+});
 StartupEvents.registry('item', event => {
-  event.create('corpus_akm').displayName('Корпус АКМ')
-})
+  event.create('catr:incomplete_wooden_handle').displayName('Незавершенная деревянная рукоятка')
+.texture('catr:item/incomplete_wooden_handle')
+});
 StartupEvents.registry('item', event => {
-  event.create('corpus_m4a1').displayName('Корпус M4A1')
-})
+  event.create('catr:incomplete_akm').displayName('Незавершенный AKM')
+.texture('catr:item/incomplete_akm')
+});
 StartupEvents.registry('item', event => {
-  event.create('insides_weapon_m4a1').displayName('Внутренности оружия M4A1')
-})
+  event.create('catr:corpus_akm').displayName('Корпус АКМ')
+.texture('catr:item/corpus_akm')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_insides_weapon_m4a1').displayName('Незавершенные внутренности оружия M4A1')
-})
+  event.create('catr:corpus_m4a1').displayName('Корпус M4A1')
+.texture('catr:item/corpus_m4a1')
+});
 StartupEvents.registry('item', event => {
-  event.create('iron_handle').displayName('Железная рукоятка')
-})
+  event.create('catr:iron_handle').displayName('Железная рукоятка')
+.texture('catr:item/iron_handle')
+});
 StartupEvents.registry('item', event => {
-  event.create('iron_butt_weapon').displayName('Железный приклад')
-})
+  event.create('catr:iron_butt_weapon').displayName('Железный приклад')
+.texture('catr:item/iron_butt_weapon')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_iron_handle').displayName('Незавершенная железная рукоятка')
-})
+  event.create('catr:incomplete_iron_handle').displayName('Незавершенная железная рукоятка')
+.texture('catr:item/incomplete_iron_handle')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_iron_butt_weapon').displayName('Незавершенный железный приклад')
-})
+  event.create('catr:incomplete_iron_butt_weapon').displayName('Незавершенный железный приклад')
+.texture('catr:item/incomplete_iron_butt_weapon')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_m4a1').displayName('Незавершенный M4A1')
-})
+  event.create('catr:incomplete_m4a1').displayName('Незавершенный M4A1')
+.texture('catr:item/incomplete_m4a1')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_hk_g3').displayName('Незавершенный HK-G3')
-})
+  event.create('catr:incomplete_hk_g3').displayName('Незавершенный HK-G3')
+.texture('catr:item/incomplete_hk_g3')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_insides_weapon_hk_g3').displayName('Незавершенные внутренности оружия HK-G3')
-})
+  event.create('catr:corpus_hk_g3').displayName('Корпус HK-G3')
+.texture('catr:item/corpus_hk_g3')
+});
 StartupEvents.registry('item', event => {
-  event.create('insides_weapon_hk_g3').displayName('Внутренности оружия HK-G3')
-})
+  event.create('catr:corpus_rhino_revolver').displayName('Корпус Rhino revolver')
+.texture('catr:item/corpus_rhino_revolver')
+});
 StartupEvents.registry('item', event => {
-  event.create('corpus_hk_g3').displayName('Корпус HK-G3')
-})
+  event.create('catr:incomplete_rhino_revolver').displayName('Незавершенный Rhino revolver')
+.texture('catr:item/incomplete_rhino_revolver')
+});
 StartupEvents.registry('item', event => {
-  event.create('corpus_rhino_revolver').displayName('Корпус Rhino revolver')
-})
+  event.create('catr:drum_revolver').displayName('Барабан револьвера')
+.texture('catr:item/drum_revolver')
+});
 StartupEvents.registry('item', event => {
-  event.create('insides_weapon_rhino_revolver').displayName('Внутренности оружия Rhino revolver')
-})
+  event.create('catr:incomplete_drum_revolver').displayName('Незавершенный барабан револьвера')
+.texture('catr:item/incomplete_drum_revolver')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_insides_weapon_rhino_revolver').displayName('Незавершенные внутренности оружия Rhino revolver')
-})
+  event.create('catr:incomplete_spring_wire').displayName('Незавершенная пружинная проволока')
+.texture('catr:item/incomplete_spring_wire')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_rhino_revolver').displayName('Незавершенный Rhino revolver')
-})
+  event.create('catr:corpus_glock_17').displayName('Корпус Glock 17')
+.texture('catr:item/corpus_glock_17')
+});
 StartupEvents.registry('item', event => {
-  event.create('drum_revolver').displayName('Барабан револьвера')
-})
+  event.create('catr:incomplete_glock_17').displayName('Незавершенный Glock 17')
+.texture('catr:item/incomplete_glock_17')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_drum_revolver').displayName('Незавершенный барабан револьвера')
-})
+  event.create('catr:corpus_cz_75').displayName('Корпус CZ 75')
+.texture('catr:item/corpus_cz_75')
+});
 StartupEvents.registry('item', event => {
-  event.create('incomplete_spring_wire').displayName('Незавершенная пружинная проволока')
-})
-StartupEvents.registry('item', event => {
-  event.create('corpus_glock_17').displayName('Корпус Glock 17')
-})
-StartupEvents.registry('item', event => {
-  event.create('incomplete_glock_17').displayName('Незавершенный Glock 17')
-})
-StartupEvents.registry('item', event => {
-  event.create('corpus_cz_75').displayName('Корпус CZ 75')
-})
-StartupEvents.registry('item', event => {
-  event.create('incomplete_cz_75').displayName('Незавершенный CZ 75')
-})
+  event.create('catr:incomplete_cz_75').displayName('Незавершенный CZ 75')
+.texture('catr:item/incomplete_cz_75')
+});

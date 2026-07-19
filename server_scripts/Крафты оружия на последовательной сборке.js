@@ -2,347 +2,294 @@
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:barrel_weapon', 0.9),
+      CreateItem.of('catr:barrel_weapon', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'createaddition:iron_rod',
     [
+e.recipes.createPressing('catr:incomplete_barrel_weapon', 'createaddition:iron_rod'),
     e.recipes.createDeploying(
-      'kubejs:incomplete_barrel_weapon',
-      ['createaddition:iron_rod', 'kubejs:iron_drill_bit']),
-e.recipes.createFilling('kubejs:incomplete_barrel_weapon', ['kubejs:incomplete_barrel_weapon', Fluid.of('minecraft:lava', 250)])
+      'catr:incomplete_barrel_weapon',
+      ['catr:incomplete_barrel_weapon', 'catr:iron_drill_bit'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_barrel_weapon')
+  .transitionalItem('catr:incomplete_barrel_weapon')
   .loops(3);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:insides_weapon_akm', 0.9),
-      CreateItem.of('create:iron_sheet', 0.1)
-    ],
-    'kubejs:corpus_akm',
-    [
-    e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_akm',
-      ['kubejs:corpus_akm', 'kubejs:the_return_mechanism']),
-    e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_akm',
-      ['kubejs:incomplete_insides_weapon_akm', 'kubejs:shutter']),
-e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_akm',
-      ['kubejs:incomplete_insides_weapon_akm', 'kubejs:barrel_weapon'])
-]
-  )
-  .transitionalItem('kubejs:incomplete_insides_weapon_akm')
-  .loops(1);
-});
-ServerEvents.recipes(e => {
-  e.recipes.create.sequenced_assembly(
-    [
-      CreateItem.of('kubejs:the_return_mechanism', 0.9),
+      CreateItem.of('catr:the_return_mechanism', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'createaddition:iron_rod',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_the_return_mechanism',
+      'catr:incomplete_the_return_mechanism',
       ['createaddition:iron_rod', 'minecraft:iron_nugget']),
 e.recipes.createDeploying(
-      'kubejs:incomplete_the_return_mechanism',
-      ['kubejs:incomplete_the_return_mechanism', 'createbigcannons:recoil_spring']),
+      'catr:incomplete_the_return_mechanism',
+      ['catr:incomplete_the_return_mechanism', 'createbigcannons:recoil_spring']),
 e.recipes.createFilling(
-     'kubejs:incomplete_the_return_mechanism',
-     ['kubejs:incomplete_the_return_mechanism', Fluid.of('minecraft:lava', 250)])
+     'catr:incomplete_the_return_mechanism',
+     ['catr:incomplete_the_return_mechanism', Fluid.of('minecraft:lava', 250)])
 ]
   )
-  .transitionalItem('kubejs:incomplete_the_return_mechanism')
+  .transitionalItem('catr:incomplete_the_return_mechanism')
   .loops(2);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:shutter', 0.9),
+      CreateItem.of('catr:shutter', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'createaddition:iron_rod',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_shutter',
-      ['createaddition:iron_rod', 'kubejs:iron_drill_bit']),
+      'catr:incomplete_shutter',
+      ['createaddition:iron_rod', 'catr:iron_drill_bit']),
 e.recipes.createDeploying(
-      'kubejs:incomplete_shutter',
-      ['kubejs:incomplete_shutter', 'minecraft:iron_nugget']),
+      'catr:incomplete_shutter',
+      ['catr:incomplete_shutter', 'minecraft:iron_nugget']),
 e.recipes.createFilling(
-     'kubejs:incomplete_shutter',
-     ['kubejs:incomplete_shutter', Fluid.of('minecraft:lava', 250)])
+     'catr:incomplete_shutter',
+     ['catr:incomplete_shutter', Fluid.of('minecraft:lava', 250)])
 ]
   )
-  .transitionalItem('kubejs:incomplete_shutter')
+  .transitionalItem('catr:incomplete_shutter')
   .loops(2);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:store_weapon', 0.9),
+      CreateItem.of('catr:store_weapon', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'create:iron_sheet',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_store_weapon',
+      'catr:incomplete_store_weapon',
       ['create:iron_sheet', 'create:iron_sheet']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_store_weapon',
-      ['kubejs:incomplete_store_weapon', 'create:iron_sheet']),
+      'catr:incomplete_store_weapon',
+      ['catr:incomplete_store_weapon', 'create:iron_sheet']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_store_weapon',
-      ['kubejs:incomplete_store_weapon', 'create:iron_sheet']),
+      'catr:incomplete_store_weapon',
+      ['catr:incomplete_store_weapon', 'create:iron_sheet']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_store_weapon',
-      ['kubejs:incomplete_store_weapon', 'create:iron_sheet']),
-e.recipes.createFilling(
-     'kubejs:incomplete_store_weapon',
-     ['kubejs:incomplete_store_weapon', Fluid.of('minecraft:lava', 250)]),
+      'catr:incomplete_store_weapon',
+      ['catr:incomplete_store_weapon', 'create:iron_sheet']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_store_weapon',
-      ['kubejs:incomplete_store_weapon','simulated:spring'])
+      'catr:incomplete_store_weapon',
+      ['catr:incomplete_store_weapon','simulated:spring'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_store_weapon')
+  .transitionalItem('catr:incomplete_store_weapon')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:butt_weapon', 0.9),
+      CreateItem.of('catr:butt_weapon', 0.9),
       CreateItem.of('minecraft:oak_planks', 0.1)
     ],
     'minecraft:oak_wood',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_butt_weapon',
+      'catr:incomplete_butt_weapon',
       ['minecraft:oak_wood','farmersdelight:iron_knife']).keepHeldItem()
 ]
   )
-  .transitionalItem('kubejs:incomplete_butt_weapon')
+  .transitionalItem('catr:incomplete_butt_weapon')
   .loops(5);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:wooden_handle', 0.9),
+      CreateItem.of('catr:wooden_handle', 0.9),
       CreateItem.of('minecraft:oak_planks', 0.1)
     ],
     'minecraft:oak_log',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_wooden_handle',
+      'catr:incomplete_wooden_handle',
       ['minecraft:oak_log','farmersdelight:iron_knife']).keepHeldItem()
 ]
   )
-  .transitionalItem('kubejs:incomplete_wooden_handle')
+  .transitionalItem('catr:incomplete_wooden_handle')
   .loops(5);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:30,GunFireMode:"AUTO",GunId:"tacz:ak47",HasBulletInBarrel:1b}]', 0.9),
+      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:30,GunFireMode:"AUTO",GunId:"tacz:ak47",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:insides_weapon_akm',
+    'catr:corpus_akm',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_akm',
-      ['kubejs:insides_weapon_akm','kubejs:butt_weapon']),
+      'catr:incomplete_akm',
+      ['catr:corpus_akm','catr:butt_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_akm',
-      ['kubejs:incomplete_akm','kubejs:wooden_handle']),
+      'catr:incomplete_akm',
+      ['catr:incomplete_akm','catr:wooden_handle']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_akm',
-      ['kubejs:incomplete_akm','kubejs:store_weapon'])
+      'catr:incomplete_akm',
+      ['catr:incomplete_akm','catr:store_weapon']),
+    e.recipes.createDeploying(
+      'catr:incomplete_akm',
+      ['catr:incomplete_akm', 'catr:barrel_weapon']),
+    e.recipes.createDeploying(
+      'catr:incomplete_akm',
+      ['catr:incomplete_akm', 'catr:the_return_mechanism']),
+    e.recipes.createDeploying(
+      'catr:incomplete_akm',
+      ['catr:incomplete_akm', 'catr:shutter'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_akm')
+  .transitionalItem('catr:incomplete_akm')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:insides_weapon_m4a1', 0.9),
-      CreateItem.of('create:iron_sheet', 0.1)
-    ],
-    'kubejs:corpus_m4a1',
-    [
-    e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_m4a1',
-      ['kubejs:corpus_m4a1', 'kubejs:the_return_mechanism']),
-    e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_m4a1',
-      ['kubejs:incomplete_insides_weapon_m4a1', 'kubejs:shutter']),
-e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_m4a1',
-      ['kubejs:incomplete_insides_weapon_m4a1', 'kubejs:barrel_weapon'])
-]
-  )
-  .transitionalItem('kubejs:incomplete_insides_weapon_m4a1')
-  .loops(1);
-});
-ServerEvents.recipes(e => {
-  e.recipes.create.sequenced_assembly(
-    [
-      CreateItem.of('kubejs:iron_handle', 0.9),
+      CreateItem.of('catr:iron_handle', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'create:iron_sheet',
     [
-e.recipes.createPressing('kubejs:incomplete_iron_handle', 'create:iron_sheet')
+e.recipes.createPressing('catr:incomplete_iron_handle', 'create:iron_sheet')
 ]
   )
-  .transitionalItem('kubejs:incomplete_iron_handle')
+  .transitionalItem('catr:incomplete_iron_handle')
   .loops(5);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:iron_butt_weapon', 0.9),
+      CreateItem.of('catr:iron_butt_weapon', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'create:iron_sheet',
     [
 e.recipes.createDeploying(
-      'kubejs:incomplete_iron_butt_weapon',
+      'catr:incomplete_iron_butt_weapon',
       ['create:iron_sheet', 'minecraft:iron_ingot']),
-e.recipes.createPressing('kubejs:incomplete_iron_butt_weapon', 'kubejs:incomplete_iron_butt_weapon'),
-e.recipes.createPressing('kubejs:incomplete_iron_butt_weapon', 'kubejs:incomplete_iron_butt_weapon'),
-e.recipes.createPressing('kubejs:incomplete_iron_butt_weapon', 'kubejs:incomplete_iron_butt_weapon'),
-e.recipes.createPressing('kubejs:incomplete_iron_butt_weapon', 'kubejs:incomplete_iron_butt_weapon'),
-e.recipes.createPressing('kubejs:incomplete_iron_butt_weapon', 'kubejs:incomplete_iron_butt_weapon')
+e.recipes.createPressing('catr:incomplete_iron_butt_weapon', 'catr:incomplete_iron_butt_weapon'),
+e.recipes.createPressing('catr:incomplete_iron_butt_weapon', 'catr:incomplete_iron_butt_weapon'),
+e.recipes.createPressing('catr:incomplete_iron_butt_weapon', 'catr:incomplete_iron_butt_weapon'),
+e.recipes.createPressing('catr:incomplete_iron_butt_weapon', 'catr:incomplete_iron_butt_weapon'),
+e.recipes.createPressing('catr:incomplete_iron_butt_weapon', 'catr:incomplete_iron_butt_weapon')
 ]
   )
-  .transitionalItem('kubejs:incomplete_iron_butt_weapon')
+  .transitionalItem('catr:incomplete_iron_butt_weapon')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:30,GunFireMode:"AUTO",GunId:"tacz:m4a1",HasBulletInBarrel:1b}]', 0.9),
+      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:30,GunFireMode:"AUTO",GunId:"tacz:m4a1",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:insides_weapon_m4a1',
+    'catr:corpus_m4a1',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_m4a1',
-      ['kubejs:insides_weapon_m4a1','kubejs:iron_butt_weapon']),
+      'catr:incomplete_m4a1',
+      ['catr:corpus_m4a1','catr:iron_butt_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_m4a1',
-      ['kubejs:incomplete_m4a1','kubejs:iron_handle']),
+      'catr:incomplete_m4a1',
+      ['catr:incomplete_m4a1','catr:iron_handle']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_m4a1',
-      ['kubejs:incomplete_m4a1','kubejs:store_weapon'])
+      'catr:incomplete_m4a1',
+      ['catr:incomplete_m4a1','catr:store_weapon']),
+    e.recipes.createDeploying(
+      'catr:incomplete_m4a1',
+      ['catr:incomplete_m4a1', 'catr:barrel_weapon']),
+      e.recipes.createDeploying(
+      'catr:incomplete_m4a1',
+      ['catr:incomplete_m4a1', 'catr:the_return_mechanism']),
+    e.recipes.createDeploying(
+      'catr:incomplete_m4a1',
+      ['catr:incomplete_m4a1', 'catr:shutter']),
+    
 ]
   )
-  .transitionalItem('kubejs:incomplete_m4a1')
+  .transitionalItem('catr:incomplete_m4a1')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:insides_weapon_hk_g3', 0.9),
+      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:3,GunFireMode:"SEMI",GunId:"tacz:hk_g3",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:corpus_hk_g3',
+    'catr:corpus_hk_g3',
     [
+        e.recipes.createDeploying(
+      'catr:incomplete_hk_g3',
+      ['catr:corpus_hk_g3','catr:iron_butt_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_hk_g3',
-      ['kubejs:corpus_hk_g3', 'kubejs:the_return_mechanism']),
+      'catr:incomplete_hk_g3',
+      ['catr:incomplete_hk_g3','catr:iron_handle']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_hk_g3',
-      ['kubejs:incomplete_insides_weapon_hk_g3', 'kubejs:shutter']),
-e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_hk_g3',
-      ['kubejs:incomplete_insides_weapon_hk_g3', 'kubejs:barrel_weapon'])
+      'catr:incomplete_hk_g3',
+      ['catr:incomplete_hk_g3','catr:store_weapon']),
+    e.recipes.createDeploying(
+      'catr:incomplete_hk_g3',
+      ['catr:incomplete_hk_g3', 'catr:barrel_weapon']),
+    e.recipes.createDeploying(
+      'catr:incomplete_hk_g3',
+      ['catr:incomplete_hk_g3', 'catr:the_return_mechanism']),
+    e.recipes.createDeploying(
+      'catr:incomplete_hk_g3',
+      ['catr:incomplete_hk_g3', 'catr:shutter'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_insides_weapon_hk_g3')
+  .transitionalItem('catr:incomplete_hk_g3')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:3,GunFireMode:"SEMI",GunId:"tacz:hk_g3",HasBulletInBarrel:1b}]', 0.9),
-      CreateItem.of('create:iron_sheet', 0.1)
-    ],
-    'kubejs:insides_weapon_hk_g3',
-    [
-    e.recipes.createDeploying(
-      'kubejs:incomplete_hk_g3',
-      ['kubejs:insides_weapon_hk_g3','kubejs:iron_butt_weapon']),
-    e.recipes.createDeploying(
-      'kubejs:incomplete_hk_g3',
-      ['kubejs:incomplete_hk_g3','kubejs:iron_handle']),
-    e.recipes.createDeploying(
-      'kubejs:incomplete_hk_g3',
-      ['kubejs:incomplete_hk_g3','kubejs:store_weapon'])
-]
-  )
-  .transitionalItem('kubejs:incomplete_hk_g3')
-  .loops(1);
-});
-ServerEvents.recipes(e => {
-  e.recipes.create.sequenced_assembly(
-    [
-      CreateItem.of('kubejs:drum_revolver', 0.9),
+      CreateItem.of('catr:drum_revolver', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
     'minecraft:iron_ingot',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_drum_revolver',
-      ['minecraft:iron_ingot', 'kubejs:iron_drill_bit']),
-e.recipes.createPressing('kubejs:incomplete_drum_revolver', 'kubejs:incomplete_drum_revolver')
+      'catr:incomplete_drum_revolver',
+      ['minecraft:iron_ingot', 'catr:iron_drill_bit']),
+e.recipes.createPressing('catr:incomplete_drum_revolver', 'catr:incomplete_drum_revolver')
 ]
   )
-  .transitionalItem('kubejs:incomplete_drum_revolver')
+  .transitionalItem('catr:incomplete_drum_revolver')
   .loops(6);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-      CreateItem.of('kubejs:insides_weapon_rhino_revolver', 0.9),
+CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:3,GunFireMode:"SEMI",GunId:"tacz:rhino357",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:corpus_rhino_revolver',
+    'catr:corpus_rhino_revolver',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_rhino_revolver',
-      ['kubejs:corpus_rhino_revolver', 'createbigcannons:recoil_spring']),
-    e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_rhino_revolver',
-      ['kubejs:incomplete_insides_weapon_rhino_revolver', 'kubejs:drum_revolver']),
+      'catr:incomplete_rhino_revolver',
+      ['catr:corpus_rhino_revolver','catr:wooden_handle']),
 e.recipes.createDeploying(
-      'kubejs:incomplete_insides_weapon_rhino_revolver',
-      ['kubejs:incomplete_insides_weapon_rhino_revolver', 'kubejs:barrel_weapon'])
-]
-  )
-  .transitionalItem('kubejs:incomplete_insides_weapon_rhino_revolver')
-  .loops(1);
-});
-ServerEvents.recipes(e => {
-  e.recipes.create.sequenced_assembly(
-    [
-CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:3,GunFireMode:"SEMI",GunId:"tacz:rhino357",HasBulletInBarrel:1b}]', 0.9),
-      CreateItem.of('create:iron_sheet', 0.1)
-    ],
-    'kubejs:insides_weapon_rhino_revolver',
-    [
+      'catr:incomplete_rhino_revolver',
+      ['catr:incomplete_rhino_revolver', 'catr:barrel_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_rhino_revolver',
-      ['kubejs:insides_weapon_rhino_revolver','kubejs:wooden_handle'])
+      'catr:incomplete_rhino_revolver',
+      ['catr:incomplete_rhino_revolver', 'catr:drum_revolver']),
+    e.recipes.createDeploying(
+      'catr:incomplete_rhino_revolver',
+      ['catr:incomplete_rhino_revolver', 'createbigcannons:recoil_spring'])
+
 ]
   )
-  .transitionalItem('kubejs:incomplete_rhino_revolver')
+  .transitionalItem('catr:incomplete_rhino_revolver')
   .loops(1);
 });
 ServerEvents.recipes(e => {
@@ -354,64 +301,64 @@ CreateItem.of('createbigcannons:spring_wire', 0.9),
     'minecraft:iron_nugget',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_spring_wire',
+      'catr:incomplete_spring_wire',
       ['minecraft:iron_nugget','minecraft:iron_nugget']),
-e.recipes.createPressing('kubejs:incomplete_spring_wire', 'kubejs:incomplete_spring_wire')
+e.recipes.createPressing('catr:incomplete_spring_wire', 'catr:incomplete_spring_wire')
 ]
   )
-  .transitionalItem('kubejs:incomplete_spring_wire')
+  .transitionalItem('catr:incomplete_spring_wire')
   .loops(3);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:17,GunFireMode:"SEMI",GunId:"tacz:glock_17",HasBulletInBarrel:1b}]', 0.9),
+CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:17,GunFireMode:"SEMI",GunId:"tacz:glock_17",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:corpus_glock_17',
+    'catr:corpus_glock_17',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_glock_17',
-      ['kubejs:corpus_glock_17','createbigcannons:recoil_spring']),
+      'catr:incomplete_glock_17',
+      ['catr:corpus_glock_17','catr:barrel_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_glock_17',
-      ['kubejs:incomplete_glock_17','kubejs:store_weapon']),
+      'catr:incomplete_glock_17',
+      ['catr:incomplete_glock_17','catr:store_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_glock_17',
-      ['kubejs:incomplete_glock_17','kubejs:barrel_weapon']),
+      'catr:incomplete_glock_17',
+      ['catr:incomplete_glock_17','createbigcannons:recoil_spring']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_glock_17',
-      ['kubejs:incomplete_glock_17','kubejs:shutter'])
+      'catr:incomplete_glock_17',
+      ['catr:incomplete_glock_17','catr:shutter'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_glock_17')
+  .transitionalItem('catr:incomplete_glock_17')
   .loops(1);
 });
 ServerEvents.recipes(e => {
   e.recipes.create.sequenced_assembly(
     [
-CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:16,GunFireMode:"AUTO",GunId:"tacz:cz75",HasBulletInBarrel:1b}]', 0.9),
+CreateItem.of('tacz:modern_kinetic_gun[custom_data={GunCurrentAmmoCount:16,GunFireMode:"AUTO",GunId:"tacz:cz75",HasBulletInBarrel:0b}]', 0.9),
       CreateItem.of('create:iron_sheet', 0.1)
     ],
-    'kubejs:corpus_cz_75',
+    'catr:corpus_cz_75',
     [
     e.recipes.createDeploying(
-      'kubejs:incomplete_cz_75',
-      ['kubejs:corpus_cz_75','createbigcannons:recoil_spring']),
+      'catr:incomplete_cz_75',
+      ['catr:corpus_cz_75','catr:iron_handle']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_cz_75',
-      ['kubejs:incomplete_cz_75','kubejs:store_weapon']),
+      'catr:incomplete_cz_75',
+      ['catr:incomplete_cz_75','catr:barrel_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_cz_75',
-      ['kubejs:incomplete_cz_75','kubejs:barrel_weapon']),
+      'catr:incomplete_cz_75',
+      ['catr:incomplete_cz_75','catr:store_weapon']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_cz_75',
-      ['kubejs:incomplete_cz_75','kubejs:shutter']),
+      'catr:incomplete_cz_75',
+      ['catr:incomplete_cz_75','createbigcannons:recoil_spring']),
     e.recipes.createDeploying(
-      'kubejs:incomplete_cz_75',
-      ['kubejs:incomplete_cz_75','kubejs:iron_handle'])
+      'catr:incomplete_cz_75',
+      ['catr:incomplete_cz_75','catr:shutter'])
 ]
   )
-  .transitionalItem('kubejs:incomplete_cz_75')
+  .transitionalItem('catr:incomplete_cz_75')
   .loops(1);
 });
