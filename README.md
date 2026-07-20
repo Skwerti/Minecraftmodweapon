@@ -141,3 +141,43 @@
 <p align="center">
   <img src="necessary/shutter_rifle.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
 </p>
+
+</p>
+<p align="center">
+  <strong>Создание корпусов оружий из железной пластины с помощью камнереза</strong>
+</p>
+<p align="center">
+  <img src="necessary/corpus_create.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+</p>
+<p align="center">
+  <strong>Автоматизация создания деревяных рукояток и прикладов с помощью механической пилы</strong>
+</p>
+<p align="center">
+  <img src="necessary/hk_g3_1.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/handle_1.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/handle_2.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/butt_1.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/butt_2.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+</p>
+<p align="center">
+  <strong>Автоматизация создания корпусов с помощью механической пилы</strong>
+</p>
+<p align="center">
+  <img src="necessary/hk_g3_1.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/hk_g3_2.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
+<p align="center">
+  <img src="necessary/hk_g3_3.png" alt="The Token Problem: 38x to 528x token reduction across 6 real repositories" width="100%" />
+</p>
