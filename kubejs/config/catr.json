@@ -1,0 +1,6 @@
+{
+  "name": "CATR (Create Adjust TAC Recipes)",
+  "description": "Добавляет крафты оружий из мода TAC на последовательной сборке Create",
+  "authors": ["Slepa01"],
+  "version": "1.0.0"
+}
